@@ -21,7 +21,7 @@ export function MesaRegalos() {
         </p>
 
         <a
-          href="https://www.elcorteingles.es/listas/bodamas/eventos/gebvhi-boda-de-jorge-y-isabel-galguera-pintado/"
+          href="https://www.elcorteingles.es/listas/bodamas/eventos/ikxzcf-boda-de-jorge-y-isabel-galguera-pintado/"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-8 inline-block border border-ink/35 px-8 py-3 font-sans text-[11px] uppercase tracking-widest text-ink transition-colors duration-300 hover:border-gold hover:text-gold"
