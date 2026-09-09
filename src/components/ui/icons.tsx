@@ -47,14 +47,3 @@ export function IconMusic(props: SVGProps<SVGSVGElement>) {
     </Icon>
   );
 }
-
-export function IconBed(props: SVGProps<SVGSVGElement>) {
-  return (
-    <Icon {...props}>
-      <path d="M3 18v-7a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v2" />
-      <path d="M12 13h7a2 2 0 0 1 2 2v3" />
-      <path d="M3 16h18" />
-      <path d="M3 18v2M21 18v2" />
-    </Icon>
-  );
-}

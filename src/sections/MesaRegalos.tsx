@@ -21,8 +21,10 @@ export function MesaRegalos() {
         </p>
 
         <a
-          href="#"
-          className="mt-8 inline-block border border-ink/20 px-8 py-3 font-sans text-[11px] uppercase tracking-widest text-ink transition-colors duration-300 hover:border-gold hover:text-gold"
+          href="https://www.elcorteingles.es/listas/bodamas/eventos/gebvhi-boda-de-jorge-y-isabel-galguera-pintado/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-8 inline-block border border-ink/35 px-8 py-3 font-sans text-[11px] uppercase tracking-widest text-ink transition-colors duration-300 hover:border-gold hover:text-gold"
         >
           Ver mesa de regalos en El Corte Inglés
         </a>
