@@ -2,7 +2,7 @@ export function TravelVideo() {
   return (
     <div className="mx-auto w-full max-w-3xl border border-stone-soft p-2">
       <video
-        className="aspect-video w-full object-cover"
+        className="aspect-[1280/460] w-full object-cover object-bottom"
         src="/media/viaje-madrid-cdmx.mp4"
         poster="/media/viaje-madrid-cdmx-poster.jpg"
         autoPlay
