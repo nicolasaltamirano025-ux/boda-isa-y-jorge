@@ -1,12 +1,6 @@
 import { Reveal } from "../components/ui/Reveal";
 import { SectionHeading } from "../components/ui/SectionHeading";
 
-const LOOKS = [
-  { src: "/media/dresscode/traje-oscuro.jpg", label: "Traje oscuro" },
-  { src: "/media/dresscode/vestido-largo.jpg", label: "Vestido largo" },
-  { src: "/media/dresscode/vestido-cocktail.jpg", label: "Vestido cocktail" },
-] as const;
-
 export function DressCode() {
   return (
     <section id="dress-code" className="bg-paper px-6 py-16 sm:py-24">
@@ -25,26 +19,17 @@ export function DressCode() {
         </div>
       </Reveal>
 
-      <div className="mx-auto mt-14 grid max-w-3xl grid-cols-1 gap-6 sm:grid-cols-3">
-        {LOOKS.map((look, index) => (
-          <Reveal key={look.src} delay={0.15 + index * 0.08}>
-            <div className="border border-stone-soft p-2">
-              <img
-                src={look.src}
-                alt={look.label}
-                width={900}
-                height={900}
-                className="aspect-square w-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
-              <p className="mt-3 pb-1 text-center font-sans text-[11px] uppercase tracking-widest text-gold">
-                {look.label}
-              </p>
-            </div>
-          </Reveal>
-        ))}
-      </div>
+      <Reveal delay={0.18} className="mx-auto mt-14 max-w-xl">
+        <img
+          src="/media/dresscode/looks.webp"
+          alt="Traje oscuro y vestido largo, ilustración del código de vestimenta"
+          width={900}
+          height={806}
+          className="mx-auto h-auto w-full max-w-md"
+          loading="lazy"
+          decoding="async"
+        />
+      </Reveal>
 
       <Reveal delay={0.1} className="mx-auto mt-14 max-w-md text-center">
         <div className="mx-auto h-px w-8 bg-gold/60" aria-hidden="true" />
