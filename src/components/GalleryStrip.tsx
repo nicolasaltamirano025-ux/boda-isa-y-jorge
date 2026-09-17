@@ -8,7 +8,7 @@ const LOOP = [...PHOTOS, ...PHOTOS];
 
 export function GalleryStrip() {
   return (
-    <section className="overflow-hidden bg-paper py-16 sm:py-20">
+    <section className="overflow-hidden bg-paper py-12 sm:py-16">
       <p className="text-center font-sans text-[11px] uppercase tracking-widest text-gold">
         Nosotros
       </p>

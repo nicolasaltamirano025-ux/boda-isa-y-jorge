@@ -9,7 +9,7 @@ const LOOKS = [
 
 export function DressCode() {
   return (
-    <section id="dress-code" className="bg-paper px-6 py-24 sm:py-32">
+    <section id="dress-code" className="bg-paper px-6 py-16 sm:py-24">
       <SectionHeading eyebrow="Código de vestimenta" title="Formal elegante" />
 
       <Reveal delay={0.1} className="mx-auto mt-14 max-w-md text-center">

@@ -13,13 +13,13 @@ export function Countdown() {
   const time = useCountdown(WEDDING.dateISO);
 
   return (
-    <section className="bg-ink px-6 py-24 sm:py-32">
+    <section className="bg-ink px-6 py-16 sm:py-24">
       <Reveal className="mx-auto max-w-xl text-center">
         <p className="font-sans text-[11px] uppercase tracking-widest text-gold">
           Cuenta regresiva
         </p>
         <p className="mt-4 font-serif text-2xl italic text-paper/80">
-          Faltan pocos días para celebrarlo juntos
+          Cada vez falta menos para celebrarlo juntos
         </p>
       </Reveal>
 

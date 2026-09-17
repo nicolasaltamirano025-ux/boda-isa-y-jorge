@@ -97,7 +97,7 @@ export function RSVP() {
 
   if (status === "sent") {
     return (
-      <section id="rsvp" className="bg-paper-deep px-6 py-24 sm:py-32">
+      <section id="rsvp" className="bg-paper-deep px-6 py-16 sm:py-24">
         <Reveal className="mx-auto max-w-md text-center">
           <p className="font-serif text-3xl italic text-ink">Gracias.</p>
           <p className="mt-6 font-sans text-sm leading-relaxed text-ink-soft">
@@ -120,7 +120,7 @@ export function RSVP() {
   }
 
   return (
-    <section id="rsvp" className="bg-paper-deep px-6 py-24 sm:py-32">
+    <section id="rsvp" className="bg-paper-deep px-6 py-16 sm:py-24">
       <SectionHeading eyebrow="Confirmación" title="RSVP" />
 
       <Reveal delay={0.1} className="mx-auto mt-6 max-w-md text-center">

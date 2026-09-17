@@ -6,8 +6,8 @@ import { VENUES } from "../lib/wedding";
 
 export function ComoLlegar() {
   return (
-    <section id="como-llegar" className="bg-paper px-6 py-24 sm:py-32">
-      <SectionHeading eyebrow="Cómo llegar" title="Rumbo a la boda" />
+    <section id="como-llegar" className="bg-paper px-6 py-16 sm:py-24">
+      <SectionHeading eyebrow="Rumbo a la boda" title="Madrid → Ciudad de México" />
 
       <Reveal delay={0.1} className="mt-16">
         <TravelVideo />

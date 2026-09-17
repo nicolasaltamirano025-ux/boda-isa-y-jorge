@@ -25,7 +25,7 @@ const SCHEDULE = [
 
 export function Programa() {
   return (
-    <section id="programa" className="bg-paper px-6 py-24 sm:py-32">
+    <section id="programa" className="bg-paper px-6 py-16 sm:py-24">
       <SectionHeading eyebrow="El día" title="Programa" />
 
       <div className="mx-auto mt-16 max-w-xl">

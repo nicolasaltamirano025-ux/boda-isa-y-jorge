@@ -17,7 +17,7 @@ function CornerMark({ className }: { className: string }) {
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[calc(100svh-4.5rem)] items-center justify-center overflow-hidden bg-paper px-6">
+    <section className="relative flex min-h-[calc(88svh-4.5rem)] items-center justify-center overflow-hidden bg-paper px-6">
       <div className="pointer-events-none absolute inset-4 border border-ink/10 sm:inset-8" aria-hidden="true" />
       <CornerMark className="left-4 top-4 sm:left-8 sm:top-8" />
       <CornerMark className="right-4 top-4 rotate-90 sm:right-8 sm:top-8" />

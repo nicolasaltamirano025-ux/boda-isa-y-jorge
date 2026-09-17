@@ -20,7 +20,7 @@ const HOTELS = [
 
 export function Hospedaje() {
   return (
-    <section id="hospedaje" className="bg-paper-deep px-6 py-24 sm:py-32">
+    <section id="hospedaje" className="bg-paper-deep px-6 py-16 sm:py-24">
       <SectionHeading eyebrow="Descanso" title="Hospedaje" />
 
       <div className="mx-auto mt-16 grid max-w-3xl grid-cols-1 gap-6 sm:grid-cols-2">

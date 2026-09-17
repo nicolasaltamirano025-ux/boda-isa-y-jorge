@@ -3,7 +3,7 @@ import { SectionHeading } from "../components/ui/SectionHeading";
 
 export function RecomendacionesViaje() {
   return (
-    <section id="que-hacer" className="bg-paper px-6 py-24 sm:py-32">
+    <section id="que-hacer" className="bg-paper px-6 py-16 sm:py-24">
       <SectionHeading eyebrow="Ciudad de México" title="Recomendaciones de viaje" />
 
       <Reveal delay={0.1} className="mx-auto mt-10 max-w-xl text-center">
