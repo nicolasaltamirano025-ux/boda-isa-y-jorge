@@ -11,6 +11,22 @@ export const WEDDING = {
   rsvpEmail: "isayjorge2027@gmail.com",
 } as const;
 
+interface Parent {
+  name: string;
+  deceased?: boolean;
+}
+
+export const PARENTS: { bride: Parent[]; groom: Parent[] } = {
+  bride: [
+    { name: "Manuel Galguera", deceased: true },
+    { name: "Esther Pintado" },
+  ],
+  groom: [
+    { name: "Santiago Saceda" },
+    { name: "Anabella Hernández" },
+  ],
+};
+
 export const VENUES = {
   ceremony: {
     label: "Ceremonia religiosa",
