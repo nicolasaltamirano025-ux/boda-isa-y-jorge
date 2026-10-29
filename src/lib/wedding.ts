@@ -18,12 +18,12 @@ interface Parent {
 
 export const PARENTS: { bride: Parent[]; groom: Parent[] } = {
   bride: [
-    { name: "Manuel Galguera", deceased: true },
-    { name: "Esther Pintado" },
+    { name: "Manuel Galguera Roiz", deceased: true },
+    { name: "Esther Pintado Carracedo" },
   ],
   groom: [
-    { name: "Santiago Saceda" },
-    { name: "Anabella Hernández" },
+    { name: "Santiago Saceda López" },
+    { name: "Anabella Hernández Lázaro" },
   ],
 };
 

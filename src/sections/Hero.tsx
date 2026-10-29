@@ -77,17 +77,17 @@ export function Hero() {
       </div>
 
       <motion.div
-        className="relative mx-auto flex w-full max-w-2xl justify-between gap-6 px-4 pb-12 sm:px-0 sm:pb-16"
+        className="relative mx-auto flex w-full max-w-2xl flex-col items-center gap-4 px-4 pb-12 sm:flex-row sm:items-start sm:justify-between sm:gap-6 sm:px-0 sm:pb-16"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
-        <ParentsColumn parents={PARENTS.bride} className="text-left" />
-        <ParentsColumn parents={PARENTS.groom} className="text-right" />
+        <ParentsColumn parents={PARENTS.bride} className="text-center sm:text-left" />
+        <ParentsColumn parents={PARENTS.groom} className="text-center sm:text-right" />
       </motion.div>
 
       <motion.div
-        className="absolute bottom-10 left-1/2 h-14 w-px -translate-x-1/2 bg-gradient-to-b from-ink/0 via-ink/30 to-ink/0"
+        className="absolute bottom-10 left-1/2 hidden h-14 w-px sm:block -translate-x-1/2 bg-gradient-to-b from-ink/0 via-ink/30 to-ink/0"
         initial={{ scaleY: 0, opacity: 0 }}
         animate={{ scaleY: 1, opacity: 1 }}
         transition={{ duration: 1, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
