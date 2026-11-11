@@ -1,20 +1,29 @@
-# Google Sheet + confirmación por correo (RSVP)
+# Google Sheet de RSVPs
 
-Esto hace que cada RSVP se guarde como fila en un Google Sheet tuyo, y que
-si el invitado confirma asistencia, le llegue un correo con los datos del
-evento y un archivo de calendario adjunto.
+Cada RSVP enviado desde el sitio se guarda como una fila en un Google Sheet,
+además del correo que manda Web3Forms. El Sheet es el respaldo permanente:
+el plan gratis de Web3Forms solo muestra los últimos 30 días.
 
-## Pasos (una sola vez)
+## Dónde vive
 
-1. Crea un Google Sheet nuevo (en la cuenta de Google donde quieran ver los RSVPs).
-2. Renombra la primera hoja a `RSVPs` y agrega esta fila de encabezados en A1:
-   `Fecha | Nombre | Email | Teléfono | Asistencia | Asistentes | Acompañante | Restricciones | Hospedaje | Comentarios`
-3. Ve a `Extensiones > Apps Script`.
-4. Borra el contenido de `Code.gs` y pega el contenido del archivo `Code.gs` de esta carpeta.
-5. Arriba a la derecha: `Implementar > Nueva implementación`.
-6. Tipo: `Aplicación web`. Ejecutar como: `Yo`. Quién tiene acceso: `Cualquier usuario`.
-7. Autoriza los permisos que pida Google (son tu propio Sheet y tu propio Gmail).
-8. Copia la URL que te da ("URL de la aplicación web") y pásamela.
+- Sheet: "RSVP Boda Isa & Jorge", en el Drive de Nicolás, compartido como
+  editor con isayjorge2027@gmail.com.
+  https://docs.google.com/spreadsheets/d/162P36DB0NpxrENpBHk-XLNj9osiSXW4cUYWQW8LxJZs/edit
+- Conectado desde el 2026-11-11. Los RSVP anteriores a esa fecha no están en
+  el Sheet salvo los agregados a mano.
 
-Con esa URL, la agrego como `VITE_SHEET_WEBHOOK_URL` en el proyecto y quedan
-conectados el Sheet y el correo de confirmación.
+## Cómo está conectado
+
+- El Sheet tiene una hoja llamada `RSVPs` (si no existe, el script la crea
+  con los encabezados la primera vez).
+- `Code.gs` vive en `Extensiones > Apps Script` de ese Sheet, desplegado como
+  Aplicación web (Ejecutar como: Yo, Acceso: Cualquier usuario).
+- La URL de esa aplicación web va en la variable `VITE_SHEET_WEBHOOK_URL`
+  (en `.env` local y en Vercel > Environment Variables). El formulario
+  (`src/sections/RSVP.tsx`) le hace POST en cada envío.
+
+## Si cambias el script
+
+Después de editar `Code.gs` en Apps Script hay que ir a
+`Implementar > Gestionar implementaciones > Editar > Versión: Nueva` para que
+la URL publicada use el código nuevo (la URL no cambia).
